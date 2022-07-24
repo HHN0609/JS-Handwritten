@@ -9,4 +9,6 @@ JS-built-in-functions
 - [Promise.all whth error handle](./src/promiseAllErrorHandel.js) 
 - [Promise.race](./src/promiseRace.js) 
 - [Promise.any](./src/promiseAny.js)  
-- [promise.allSettled](./src/promiseAllSettled.js)
+- [Promise.allSettled](./src/promiseAllSettled.js) 
+- [deepClone](./src/deepClone.js) 
+- [setInterval](./src/setInterval.js) 
