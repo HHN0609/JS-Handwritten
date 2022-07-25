@@ -13,6 +13,8 @@
 - [setInterval](./src/setInterval.js) 
 - [throttle](./src/throttle.js) 
 - [debounce](./src/debounce.js) 
-- [instance of](./src/instanceOf.js)
+- [instance of](./src/instanceOf.js) 
 - [flat](./src/flat.js) 
-- [ajax](./src/ajax.js)
+- [ajax](./src/ajax.js) 
+- [ConcurrentController](./src/ConcurrentController.js) 
+
