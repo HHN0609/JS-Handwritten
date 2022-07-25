@@ -1,5 +1,4 @@
-# JS-built-in-functions
-JS-built-in-functions 
+# Javascript 手写题集合
 - [new](./src/new.js)
 - [call](./src/call.js) 
 - [apply](./src/apply.js) 
@@ -12,3 +11,8 @@ JS-built-in-functions
 - [Promise.allSettled](./src/promiseAllSettled.js) 
 - [deepClone](./src/deepClone.js) 
 - [setInterval](./src/setInterval.js) 
+- [throttle](./src/throttle.js) 
+- [debounce](./src/debounce.js) 
+- [instance of](./src/instanceOf.js)
+- [flat](./src/flat.js) 
+- [ajax](./src/ajax.js)
