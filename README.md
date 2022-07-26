@@ -17,4 +17,5 @@
 - [flat](./src/flat.js) 
 - [ajax](./src/ajax.js) 
 - [ConcurrentController](./src/ConcurrentController.js) 
+- [currying](./src/curry.js) 
 
