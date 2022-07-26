@@ -18,4 +18,7 @@
 - [ajax](./src/ajax.js) 
 - [ConcurrentController](./src/ConcurrentController.js) 
 - [currying](./src/curry.js) 
+- [reduce](./src/reduce.js) 
+- [ObserverPattern](./src/observerPattern.js) 
+
 
