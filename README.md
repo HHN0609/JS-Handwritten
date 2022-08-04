@@ -20,5 +20,6 @@
 - [currying](./src/curry.js) 
 - [reduce](./src/reduce.js) 
 - [ObserverPattern](./src/observerPattern.js) 
+- [compose](./src/compose.js)
 
 
