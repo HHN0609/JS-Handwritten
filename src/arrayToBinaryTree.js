@@ -47,6 +47,7 @@ function arrayToBinaryTree(arr) {
         let node;
         for(let i=0; i<nextLevelCount; i++){
             let val = arr.shift();
+            // 这里不加这个会导致死循环，因为最后一层的节点会一直保存在queue里面
             if(val === undefined){
                 return root;
             }
