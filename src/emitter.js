@@ -34,7 +34,7 @@ class EventEmitter {
             cbs.splice(index, 1);
             if(cbs.length === 0) this.message.delete(type);
         } else {
-            cbs.push(callback);
+            this.message.clear(type);
         }
     }
 

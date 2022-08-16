@@ -21,5 +21,8 @@
 - [reduce](./src/reduce.js) 
 - [ObserverPattern](./src/observerPattern.js) 
 - [compose](./src/compose.js)
+- [asyncCompose](./src/asyncCompose.js) 
+- [arrayToBinaryTree](./src/arrayToBinaryTree.js)
+
 
 
