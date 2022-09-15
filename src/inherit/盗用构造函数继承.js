@@ -11,6 +11,12 @@ function Son(name, age) {
     this.age = age;
 }
 
+// 优点
+// 1、可以多继承
+// 2、可以向父类构造函数传入参数
+// 缺点
+// 1、只能继承父类的实例属性和方法，不能继承父类原型上的属性和方法
+
 let son = new Son("hhn", 20);
 
 son.sayHello();
