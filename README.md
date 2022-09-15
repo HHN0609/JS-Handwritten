@@ -25,6 +25,8 @@
 - [arrayToBinaryTree](./src/arrayToBinaryTree.js)
 - [pascalToCamel](./src/pascalToCamel.js)
 - [camelToPascal](./src/camelToPascal.js) 
-- [urlResolveParams](./src/urlReolveParams.js)
+- [urlResolveParams](./src/urlReolveParams.js) 
+- [inherit](./src/inherit/) 
+- [shuffle](./src/shuffle.js)
 
 
