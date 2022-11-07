@@ -8,7 +8,7 @@ function _reduce(callback, initialValue) {
     let startIndex = 1;
     let prev = arr[0];
 
-    if(initialValue){
+    if(initialValue !== null || initialValue !== undefined){
         startIndex = 0
         prev = initialValue;
     }

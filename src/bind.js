@@ -7,7 +7,9 @@ Function.prototype._bind = function(obj, ...args){
     
     function bound(...restArgs) {
         const _this = this;
-        if(_this instanceof bound){
+        // _this instanceof bound
+        // 如果这个bound函数被当作构造器调用
+        if(new.target){
             // 被当作构造函数调用
             fn.call(_this, ...args, ...restArgs);
             Object.setPrototypeOf(_this, fn.prototype);

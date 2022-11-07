@@ -17,7 +17,7 @@
 - [flat](./src/flat.js) 
 - [ajax](./src/ajax.js) 
 - [ConcurrentController](./src/ConcurrentController.js) 
-- [currying](./src/curry.js) 
+- [currying](./src/currying.js) 
 - [reduce](./src/reduce.js) 
 - [ObserverPattern](./src/observerPattern.js) 
 - [compose](./src/compose.js)
