@@ -28,5 +28,6 @@
 - [urlResolveParams](./src/urlReolveParams.js) 
 - [inherit](./src/inherit/) 
 - [shuffle](./src/shuffle.js)
+- [const](./src/const.js)
 
 
