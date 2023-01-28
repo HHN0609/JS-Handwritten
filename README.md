@@ -29,5 +29,6 @@
 28. [inherit](./src/inherit/) 
 29. [shuffle](./src/shuffle.js)
 30. [const](./src/const.js) 
+31. [flatToNested](./src/flatToNested.js) 
 
 
