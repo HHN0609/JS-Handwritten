@@ -13,7 +13,7 @@ function throttle(fn, delay){
         // 首次执行的时候，prev为undefined，直接执行
         if(!prev || curr - prev > delay){
             prev = curr
-            return fn(...args);
+            return fn.apply(this, args);
         }
     }
 }

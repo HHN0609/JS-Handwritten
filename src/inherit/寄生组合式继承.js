@@ -20,6 +20,7 @@ function Son(age, name) {
 function Empty() {}
 Empty.prototype = Father.prototype;
 Son.prototype = new Empty();
+// Son.prototype = Object.create(Father.prototype);
 // 对子类构造函数的原型，有过赋值操作的，都需要手动修改子类原型中的constructor指向
 Son.prototype.constructor = Son;
 

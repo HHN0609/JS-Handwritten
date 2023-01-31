@@ -1,4 +1,4 @@
-# Javascript 手写题集合
+# Javascript handwritten/手写题集合
 1. [new](./src/new.js)
 2. [call](./src/call.js) 
 3. [apply](./src/apply.js) 
@@ -30,5 +30,8 @@
 29. [shuffle](./src/shuffle.js)
 30. [const](./src/const.js) 
 31. [flatToNested](./src/flatToNested.js) 
+32. [duplicateRemoval](./src/duplicateRemoval.js)
+33. [jsonp](./src/jsonp.js) 
+34. [imgLazyLoad](./src/imgLazyLoad.js)
 
 
