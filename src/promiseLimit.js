@@ -46,6 +46,47 @@ function promiseLimit(requestArr, limit){
     });
 }
 
+/**
+ * recommend， more simple
+ * @param {Array<() => Promise<any>>} requestArr 
+ * @param {number} limit 
+ * @return {Promise<any>}
+ */
+function promiseLimitV2(requestArr, limit){
+    return new Promise((resolve) => {
+        const ans = new Array(requestArr.length).fill(0);
+        const records = requestArr.map((req, index) => [ req, index ]);
+        let doneCount = 0;
+        for(let i=0; i<Math.min(requestArr.length, limit); i++) {
+            start(...records.shift());
+        }
+
+        /**
+         * 
+         * @param {() => Promise<any>} request 
+         * @param {number} index 
+         */
+        function start(request, index) {
+            if(!request) return;
+            console.log(`${index} - start`);
+            request().then((value) => {
+                ans[index] = value;
+                console.log(`${index} - success`);
+            }).catch((reason) => {
+                ans[index] = reason;
+                console.log(`${index} - fail`);
+            }).finally(() => {
+                doneCount++;
+                if (doneCount === requestArr.length) {
+                    resolve(ans);
+                    return;
+                }
+                records.length && start(...(records.shift()));
+            });
+        }
+    });
+}
+
 let p1 =  () => new Promise((res) =>  { setTimeout( () => { res(1)  }, 5000 ) }  );
 let p2 =  () => new Promise((res) =>  { setTimeout( () => { res(2)  }, 1000 ) }  );
 let p3 =  () => new Promise((res, rej) =>  { setTimeout( () => { rej(3)  }, 1000 ) }  );
@@ -61,6 +102,6 @@ let p12 = () => new Promise((res) => { setTimeout( () => { res(12) }, 1000 ) }  
  
 let arr = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12];
 
-promiseLimit(arr, 5).then((value) => {
+promiseLimitV2(arr, 5).then((value) => {
     console.log(value);
 });
